@@ -1,0 +1,62 @@
+<title>正在载入...</title>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+html, body { width: 100%; height: 100%; position: relative; margin: 0; padding: 0; }
+body{background:#fff;font-family:Microsoft Yahei;-webkit-animation:fadeIn 1s linear;animation:fadeIn 1s linear}
+@-webkit-keyframes fadeIn{from{opacity:0}
+to{opacity:1}
+}@keyframes fadeIn{from{opacity:0}
+to{opacity:1}
+}
+#circle{background-color:rgba(0,0,0,0);border:5px solid rgba(0,183,229,0.9);opacity:.9;border-right:5px solid rgba(0,0,0,0);border-left:5px solid rgba(0,0,0,0);border-radius:50px;box-shadow:0 0 35px #2187e7;width:50px;height:50px;margin:0 auto;position:fixed;left:30px;bottom:30px;-moz-animation:spinPulse 1s infinite ease-in-out;-webkit-animation:spinPulse 1s infinite ease-in-out;-o-animation:spinPulse 1s infinite ease-in-out;-ms-animation:spinPulse 1s infinite ease-in-out}
+#circle1{background-color:rgba(0,0,0,0);border:5px solid rgba(0,183,229,0.9);opacity:.9;border-left:5px solid rgba(0,0,0,0);border-right:5px solid rgba(0,0,0,0);border-radius:50px;box-shadow:0 0 15px #2187e7;width:30px;height:30px;margin:0 auto;position:fixed;left:40px;bottom:40px;-moz-animation:spinoffPulse 1s infinite linear;-webkit-animation:spinoffPulse 1s infinite linear;-o-animation:spinoffPulse 1s infinite linear;-ms-animation:spinoffPulse 1s infinite linear}
+@-webkit-keyframes spinPulse{0%{-webkit-transform:rotate(160deg);opacity:0;box-shadow:0 0 1px #505050}
+50%{-webkit-transform:rotate(145deg);opacity:1}
+100%{-webkit-transform:rotate(-320deg);opacity:0}
+}@-webkit-keyframes spinoffPulse{0%{-webkit-transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg)}
+}
+#loading-text{position:fixed;left:110px;bottom:35px;color:#736D6D}
+@media screen and (max-width:600px){#circle,#circle1{left:0;right:0;top:0;bottom:0}
+#circle{margin:120px auto}
+#circle1{margin:130px auto}
+#loading-text{display:block;text-align:center;margin-top:220px;position:static;margin-left:10px;text-shadow: 1px 1px 1px #909090;}
+}
+.warning{max-width: 500px;margin: 0 auto; position: absolute; left: 0; right: 0; top: 40%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.wtitle {font-size: 22px;color: #d68300;}
+.wurl {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #827777;}
+.btn {display: inline-block;line-height: 20px;cursor: pointer;border: 1px solid #A9A6A6;padding: 6px 10px;font-size: 14px;text-decoration: none;}
+.btn-green {color: #fff;background-color: #238aca;border: 1px solid #238aca;}
+.btn:hover {background-color: #A9A6A6;border: 1px solid #A9A6A6;color: #fff;}
+</style>
+ 
+<body>
+        <div id="circle"></div>
+    <div id="circle1"></div>
+    <p id="loading-text">&#129300;玩命加载中，请稍候...</p>
+     
+</body>
+ 
+ 
+<script type="text/javascript">
+var t = 1;   
+function showTime(){   
+        t -= 1;  
+        if(t==0){  
+                var d=window.location.href.split("?wd=")[1];
+                window.location.href='http://www.496dy.cn/";
+                return;
+        }  
+        setTimeout("showTime()",1000);  
+}  
+showTime();  
+</script>
